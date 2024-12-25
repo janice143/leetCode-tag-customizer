@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 300px;
+}
+p {
+  margin: 0;
+  height: 16px;
+}
+h2 {
+  height: 20px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input {
+  width: 290px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.language-choice {
+  display: flex;
+  gap: 15px; /* Space between radio buttons */
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.language-choice label {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  color: #333; /* Text color */
+}
+
+.language-choice input[type='radio'] {
+  appearance: none; /* Remove default radio button styling */
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Make it circular */
+  outline: none;
+  margin-right: 5px; /* Space between radio button and label text */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0;
+}
+
+.language-choice input[type='radio']:checked {
+  border-color: #4caf50; /* Green border for selected radio button */
+  background-color: #4caf50; /* Fill color for selected radio button */
+}
+
+.language-choice input[type='radio']:hover {
+  border-color: #888; /* Slight hover effect */
+}
+
+.recommendation-panel {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.recommendation-panel-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.recommendation-panel-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th,
+td {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+td span {
+  cursor: pointer;
+  margin-right: 5px;
+}
+td span:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}

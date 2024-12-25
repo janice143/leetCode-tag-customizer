@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode Tag Customizer</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body>
+    <h2 id="title">Customize Difficulty Tags</h2>
+
+    <!-- Language Choice -->
+    <div class="language-choice">
+      <label
+        ><input type="radio" name="language" value="en" checked />
+        English</label
+      >
+      <label><input type="radio" name="language" value="zh" /> 中文</label>
+    </div>
+
+    <!-- Table for Recommendations -->
+    <div class="recommendation-panel">
+      <p class="recommendation-panel-title" id="suggestions-title">
+        Suggestions
+      </p>
+      <p class="recommendation-panel-subtitle" id="suggestions-subtitle">
+        Click on the suggestion to fill the blank.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th id="difficulty-header">Difficulty</th>
+            <th id="suggestions-header">Suggestions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong id="easy-label">Easy</strong></td>
+            <td>
+              <span class="easy-copy" data-easy="🥉">🥉</span>
+              <span class="easy-copy" data-easy="⭐">⭐</span>
+              <span class="easy-copy" data-easy="Simple" id="easy-label-option3"
+                >Simple</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><strong id="medium-label">Medium</strong></td>
+            <td>
+              <span class="easy-copy" data-medium="🥈">🥈</span>
+              <span class="easy-copy" data-medium="⭐⭐">⭐⭐</span>
+              <span
+                class="easy-copy"
+                data-medium="Manageable"
+                id="medium-label-option3"
+                >Manageable</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><strong id="hard-label">Hard</strong></td>
+            <td>
+              <span class="easy-copy" data-hard="🥇">🥇</span>
+              <span class="easy-copy" data-hard="⭐⭐⭐">⭐⭐⭐</span>
+              <span
+                class="easy-copy"
+                data-hard="Challenging"
+                id="hard-label-option3"
+                >Challenging</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <label for="easy" id="easy-input-label">Easy Tag</label>
+    <input id="easy" type="text" placeholder="Enter custom tag for Easy" />
+
+    <label for="medium" id="medium-input-label">Medium Tag</label>
+    <input id="medium" type="text" placeholder="Enter custom tag for Medium" />
+
+    <label for="hard" id="hard-input-label">Hard Tag</label>
+    <input id="hard" type="text" placeholder="Enter custom tag for Hard" />
+
+    <button id="save">Save Changes</button>
+
+    <script src="utils.js"></script>
+    <script src="language-config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

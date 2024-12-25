@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Base circles -->
+  <circle cx="40" cy="40" r="16" fill="#00b8a3"/>
+  <circle cx="88" cy="40" r="16" fill="#ffc01e"/>
+  <circle cx="64" cy="88" r="16" fill="#ff375f"/>
+  <!-- Inner highlights -->
+  <circle cx="40" cy="40" r="12" fill="#00c4ae"/>
+  <circle cx="88" cy="40" r="12" fill="#ffd042"/>
+  <circle cx="64" cy="88" r="12" fill="#ff4d71"/>
+  <!-- Smile curve -->
+  <path d="M16,64 Q64,128 112,64" fill="none" stroke="#666" stroke-width="8"/>
+</svg>

@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Tag Customizer",
+  "author": "lanyanping",
+  "version": "1.0",
+  "github_url": "https://github.com/janice143/leetCode-tag-customizer",
+  "description": "Customize difficulty tags on LeetCode.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://leetcode.com/*", "https://leetcode.cn/*"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*", "https://leetcode.cn/*"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  }
+}
