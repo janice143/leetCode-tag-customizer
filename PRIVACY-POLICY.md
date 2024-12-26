@@ -14,7 +14,7 @@ The extension uses locally stored data solely to provide customization features 
 
 ## Permissions
 
-The permissions requested by this extension (e.g., `activeTab`, `storage`) are used only to modify content on the LeetCode website and save your preferences.
+This extension only uses the `storage` permission, for the purpose of saving user preferences for custom tag names (e.g., "Easy," "Medium," "Hard") and language configuration settings. This ensures that users' customizations persist across sessions, providing a seamless and personalized experience when using the extension.
 
 ## Updates to This Policy
 
